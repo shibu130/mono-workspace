@@ -4,8 +4,30 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## creation
 
-1. ng new mono-workspace --create-application=false
+1.  ng new mono-workspace --create-application=false
 
+2.  cd .\mono-workspace\ 
+
+3.  ng g application host-app --routing  --style=css
+
+4.  ng g application mfe-app --routing --style=css
+
+5. ng s host-app -o
+
+6. npm i  webpack webpack-cli --save-dev (ignore)
+
+7. ng add @angular-architects/module-federation@19 --project host-app  --port 4200 , npm install ngx-build-plus@19 --save-dev
+
+8. ng add @angular-architects/module-federation@19 --project mfe-app  --port 4200
+
+npm uninstall webpack webpack-cli (no need if 6 was ignored)
+
+Remove-Item node_modules -Recurse -Force (no need if 6 was ignored)
+Remove-Item package-lock.json -Force (no need if 6 was ignored)
+
+in ts config choose module and target as es2020
+
+getting import.meta error and god knows why ?
 
 ## Development server
 
