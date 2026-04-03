@@ -2,6 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.20.
 
+## creation
+
+1. ng new mono-workspace --create-application=false
+
+
 ## Development server
 
 To start a local development server, run:
