@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
   declarations: [TodoListComponent],
   imports: [
     CommonModule, RouterModule.forChild([{path:"", pathMatch:"full", component:TodoListComponent}])
-  ]
+  ],
+  exports: [TodoListComponent]
 })
 export class TodoListModule { }

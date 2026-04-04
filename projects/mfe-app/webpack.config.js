@@ -5,7 +5,8 @@ module.exports = withModuleFederationPlugin({
   name: 'mfe-app',
 
   exposes: {
-    './Component': './projects/mfe-app/src/app/app.component.ts',
+    './TodoList': './projects/mfe-app/src/app/todo-list/todo-list.module.ts',
+    //C:\Users\SHIBU\Desktop\angular-practice\mono-repo-practice\mono-workspace\projects\host-app\src\app\todo-list\todo-list.component.ts
   },
 
   shared: {
